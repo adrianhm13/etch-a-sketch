@@ -5,14 +5,24 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Etch a Sketch!</title>
 </head>
 
 <body>
     <div class="generalDiv">
-        <div class="titleDiv">A</div>
+        <div class="titleDiv">
+            <h1>Let your creativity flow through your fingers.</h1>
+        </div>
         <div class="mainContainer">
-            <div class="optionsMain">B1</div>
+            <div class="optionsMain">
+                <div class="optionsText"><p>Increase the grid, clear it or change the color</p></div>
+                <div class="optionsButtons">
+                    <input type="button" class="buttons" value="New grid">
+                    <input type="button" class="buttons" value="Change color">
+                    <input type="button" class="buttons" value="Clear">
+                </div>
+            </div>
             <div class="drawDiv">
                 <div class="drawContent" id="squareContainer"></div>
             </div>
