@@ -1,6 +1,6 @@
 
 const squareMain = document.querySelector("#squareContainer")
-    
+
 for(let i = 0; i < 256; i++){
 const squareDiv = document.createElement('div');
 
@@ -10,14 +10,18 @@ squareMain.appendChild(squareDiv);
 console.log(i);
 };
 
-function changeColor(){
-    this.style.backgroundColor = 'red';
-    console.log(this);
-};
+const mainDiv = document.querySelector(".drawContent");
 
-const drawSquares = document.querySelectorAll(".square");
+mainDiv.addEventListener('mousedown', mouseDown);
 
-drawSquares.forEach(element => {
-    element.addEventListener("mouseover", changeColor);
-    
-});
+function mouseDown(){
+    mainDiv.addEventListener('mouseover', mouseOver);
+
+    mainDiv.addEventListener('mouseup', () => {
+    mainDiv.removeEventListener('mouseover', mouseOver);
+    console.log("released")});
+}
+
+function mouseOver(e){
+    e.target.style.backgroundColor = 'red';
+}
