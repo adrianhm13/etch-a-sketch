@@ -18,5 +18,6 @@ function changeColor(){
 const drawSquares = document.querySelectorAll(".square");
 
 drawSquares.forEach(element => {
-    element.addEventListener("touchstart", changeColor);
+    element.addEventListener("mouseover", changeColor);
+    
 });

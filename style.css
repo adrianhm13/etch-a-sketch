@@ -98,11 +98,10 @@ html, body{
     display: grid;
     width: 500px;
     height: 500px;
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(255, 255, 255);
 }
 .square{
-    margin: 0.5px;
-    background-color: rgb(163, 163, 163);
+    background-color: rgb(255, 255, 255);
 }
 .footerContainer{
     float:left;
