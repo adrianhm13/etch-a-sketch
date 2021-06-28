@@ -93,15 +93,20 @@ html, body{
 }
 .drawContent{
     box-shadow: 0 2px 15px 0 rgba(170, 170, 170, 0.2), 0 2px 5px 0 rgba(128, 128, 128, 0.19);
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
     display: grid;
     width: 500px;
     height: 500px;
     background-color: rgb(255, 255, 255);
 }
 .square{
+ 
     background-color: rgb(255, 255, 255);
+}
+.defaultState{
+    background-color:rgb(255, 255, 255);
+}
+.changeColor{
+    background-color:rgb(126, 67, 182);
 }
 .footerContainer{
     float:left;
