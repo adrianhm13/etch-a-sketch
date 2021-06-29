@@ -40,7 +40,7 @@ html, body{
     flex-direction:column;
     background-color: rgb(199, 199, 199);
     width: 500px;
-    height: 20%;
+    min-height: 20%;
     margin: 25px 10px 25px 10px;
     border-radius: 2px;
     box-shadow: 0 2px 15px 0 rgba(170, 170, 170, 0.2), 0 2px 5px 0 rgba(128, 128, 128, 0.19);
@@ -50,6 +50,9 @@ html, body{
     justify-content:space-around;
     align-content:center;
     margin-bottom: 10px;
+}
+.colorpicker{
+    margin-top: 5px;
 }
 .buttons{
     background-color: #7d4fb9; /* Green */

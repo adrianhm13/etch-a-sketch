@@ -38,6 +38,10 @@ function changeGrid() {
     }
 };
 
+function pickColor() {
+    
+};
+
 function clearGrid() {
     const squareDraws = document.querySelectorAll('.square');
     squareDraws.forEach(element => element.classList.remove('changeColor'));
@@ -53,7 +57,7 @@ function mouseDown() {
 };
 
 function changeColor(e) {
-    e.target.classList.add('changeColor');
+    e.target.style.setProperty('background-color', ' '+ btnPickColor.value +' ');
 }
 
 const mainDiv = document.querySelector(".drawContent");
@@ -66,6 +70,10 @@ const btnGrid = document.getElementById("btnGrid");
 btnGrid.addEventListener('click', () => {
     changeGrid();
 });
+
+const btnPickColor = document.getElementById("colorpicker");
+
+console.log(btnPickColor.value);
 
 const btnClear = document.getElementById("btnClear");
 
