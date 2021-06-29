@@ -44,7 +44,7 @@ function pickColor() {
 
 function clearGrid() {
     const squareDraws = document.querySelectorAll('.square');
-    squareDraws.forEach(element => element.classList.remove('changeColor'));
+    squareDraws.forEach(element => element.style.setProperty('background-color', 'white'));
 };
 
 //When click and hover, squares change color
